@@ -1,0 +1,8 @@
+pymongo
+flask
+flask-cors
+flask-session
+flask_login
+oauthlib
+requests
+
