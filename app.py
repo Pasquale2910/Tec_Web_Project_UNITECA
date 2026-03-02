@@ -29,11 +29,10 @@ carrello = db["carrello"]
 UPLOAD_FOLDER = '../uniteca/static/images/'
 
 # Configuration GOOGLE
-GOOGLE_CLIENT_ID = os.environ.get("1073136912988-mcqp9mq0d096uvrapmkrtbjbnbsv4eue.apps.googleusercontent.com", None)
-GOOGLE_CLIENT_SECRET = os.environ.get("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", None)
-GOOGLE_DISCOVERY_URL = (
-    "https://accounts.google.com/.well-known/openid-configuration"
-)
+
+GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
+GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
+GOOGLE_DISCOVERY_URL = ("https://accounts.google.com/.well-known/openid-configuration")
 
 # Flask app setup
 app = Flask(__name__)
@@ -536,4 +535,5 @@ def logout():
 
 if __name__ == '__main__':
    app.run(debug = True)
+
    
